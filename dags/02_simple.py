@@ -25,7 +25,7 @@ default_args = {
     'retries': 0
 }
 
-with DAG('my_simple_dag',
+with DAG('simple_dag',
          catchup=False,
          default_args=default_args,
          schedule_interval='*/10 * * * *',
